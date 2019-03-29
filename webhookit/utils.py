@@ -30,7 +30,7 @@ def standard_response(success, data):
     return json.dumps(rst)
 
 
-def async(f):
+def async_(f):
     @wraps(f)
     def wrapper(*args, **kwargs):
         thr = Thread(target=f, args=args, kwargs=kwargs)
@@ -134,7 +134,7 @@ def do_ssh_cmd(ip, port, account, pkey, shell, push_data='', timeout=300):
 
 
 # 使用线程来异步执行
-@async
+@async_
 def do_webhook_shell(server, data):
     log('Start to process server: %s' % json.dumps(filter_server(server)))
     script = server.get('SCRIPT', '')

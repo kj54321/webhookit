@@ -96,7 +96,7 @@ INDEX_HTML_TEMP = '''
       }
     }
   </script> 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script async_ src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- sorry for ad -->
   <ins class="adsbygoogle"
        style="display:block"
